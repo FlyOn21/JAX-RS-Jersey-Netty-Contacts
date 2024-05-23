@@ -22,7 +22,7 @@ public class ServerRun {
         try {
             new ServerRun().run();
         } catch (MalformedURLException e) {
-            START_SERVER_LOGGER.error("Server start error", e);
+            START_SERVER_LOGGER.error(String.format("Server start error - %s", e));
             CONSOLE_START_SERVER_LOGGER.error("Server start error");
         }
     }
